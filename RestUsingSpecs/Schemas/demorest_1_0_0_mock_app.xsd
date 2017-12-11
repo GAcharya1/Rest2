@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema elementFormDefault="qualified" targetNamespace="/z7cgz54glo23cwkgr2jh2zrrxhgzca5r/T1513020954814Converted/JsonSchema" xmlns:tns="/z7cgz54glo23cwkgr2jh2zrrxhgzca5r/T1513020954814Converted/JsonSchema" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="CustomerInfo" type="tns:CustomerInfo"/>
+    <xs:complexType name="CustomerInfo">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Email" type="xs:string"/>
+            <xs:element minOccurs="0" name="FirstName" type="xs:string"/>
+            <xs:element minOccurs="0" name="PhoneNumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="LastName" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="GiveNewSchemaNameHere" type="tns:GiveNewSchemaNameHere"/>
+    <xs:complexType name="GiveNewSchemaNameHere">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Email" type="xs:string"/>
+            <xs:element minOccurs="0" name="FirstName" type="xs:string"/>
+            <xs:element minOccurs="0" name="PhoneNumber" type="xs:string"/>
+            <xs:element minOccurs="0" name="LastName" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
