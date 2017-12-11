@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sca:composite xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:BW="http://xsd.tns.tibco.com/amf/models/sca/implementationtype/BW" xmlns:XMLSchema="http://www.w3.org/2001/XMLSchema" xmlns:compositeext="http://schemas.tibco.com/amx/3.0/compositeext" xmlns:rest="http://xsd.tns.tibco.com/bw/models/binding/rest" xmlns:sca="http://www.osoa.org/xmlns/sca/1.0" xmlns:scact="http://xsd.tns.tibco.com/amf/models/sca/componentType" xmlns:scaext="http://xsd.tns.tibco.com/amf/models/sca/extensions" xmi:id="_T5e7QN6qEeehs8qXOvLDOQ" targetNamespace="http://tns.tibco.com/bw/composite/RestUsingSpecs" name="RestUsingSpecs" compositeext:version="1.0.0" compositeext:formatVersion="2">
+  <sca:service xmi:id="_gZh7cN6qEeehs8qXOvLDOQ" name="Customer" promote="ComponentProcess/Customer">
+    <sca:interface.wsdl xmi:id="_gZ02YN6qEeehs8qXOvLDOQ" interface="http://xmlns.example.com/20171211133434PLT#wsdl.interface(Customer)" scaext:wsdlLocation="../Processes/restusingspecs/Process.bwp"/>
+    <scaext:binding xsi:type="rest:RestServiceBinding" xmi:id="_gZ-AUN6qEeehs8qXOvLDOQ" name="RestService" path="/Customer" docBasePath="http://localhost:7777/RestUsingSpecs" docResourcePath="Customer" basePath="/z7cgz54glo23cwkgr2jh2zrrxhgzca5r" connector="restusingspecs.z7cgz54glo23cwkgr2jh2zrrxhgzca5r" structuredData="true" technologyVersion="2.0" implementation="Service Descriptors/demorest_1_0_0_mock_app.json">
+      <operation xmi:id="_gaHxUN6qEeehs8qXOvLDOQ" operationName="post" nickname="postCustomer" httpMethod="POST" responseStyle="element" requestStyle="element">
+        <clientFormat>json</clientFormat>
+        <clientRequestFormat>json</clientRequestFormat>
+      </operation>
+      <operation xmi:id="_gaHxUd6qEeehs8qXOvLDOQ" operationName="get" nickname="getCustomer" httpMethod="GET" responseStyle="element">
+        <parameters xmi:id="_gbdOEd6qEeehs8qXOvLDOQ">
+          <parameterMapping xmi:id="_gbdOEt6qEeehs8qXOvLDOQ" parameterName="ID" parameterType="Query" dataType="string" description="Customer ID"/>
+        </parameters>
+        <clientFormat>json</clientFormat>
+      </operation>
+      <parameters xmi:id="_gbdOEN6qEeehs8qXOvLDOQ"/>
+    </scaext:binding>
+    <scact:bindingAdjunct xmi:id="_gaHxUt6qEeehs8qXOvLDOQ" bindingName="RestService"/>
+  </sca:service>
+  <sca:property xmi:id="_Us4uIN6qEeehs8qXOvLDOQ" name="BW.DEPLOYMENTUNIT.TYPE" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_UtLpEN6qEeehs8qXOvLDOQ" name="BW.APPNODE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_UtLpEd6qEeehs8qXOvLDOQ" name="BW.DEPLOYMENTUNIT.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_UtVaEN6qEeehs8qXOvLDOQ" name="BW.HOST.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_UtVaEd6qEeehs8qXOvLDOQ" name="BW.DOMAIN.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_UtfLEN6qEeehs8qXOvLDOQ" name="BW.DEPLOYMENTUNIT.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_UtoVAN6qEeehs8qXOvLDOQ" name="BW.APPSPACE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_UtoVAd6qEeehs8qXOvLDOQ" name="BW.MODULE.VERSION" type="XMLSchema:string" scalable="true"/>
+  <sca:property xmi:id="_UtoVAt6qEeehs8qXOvLDOQ" name="BW.MODULE.NAME" type="XMLSchema:string" scalable="true"/>
+  <sca:component xmi:id="_UWPIsN6qEeehs8qXOvLDOQ" name="ComponentProcess" compositeext:version="1.0.0.qualifier">
+    <scaext:implementation xsi:type="BW:BWComponentImplementation" xmi:id="_UWPIsd6qEeehs8qXOvLDOQ" processName="restusingspecs.Process"/>
+    <sca:service xmi:id="_gZYKcN6qEeehs8qXOvLDOQ" name="Customer">
+      <sca:interface.wsdl xmi:id="_gZYKcd6qEeehs8qXOvLDOQ" interface="http://xmlns.example.com/20171211133434PLT#wsdl.interface(Customer)" scaext:wsdlLocation="../Processes/restusingspecs/Process.bwp"/>
+    </sca:service>
+  </sca:component>
+</sca:composite>
